@@ -4,9 +4,11 @@
     
     <StackLayout VerticalOptions="Start" HorizontalOptions="Center" Spacing="0" >
 
+        <!--
         <Label  Text="Relación de Productos Disponibles" BackgroundColor="Navy" 
                 TextColor="White" HorizontalTextAlignment="Center" 
                 FontSize="Medium" VerticalTextAlignment="Center" HeightRequest="50"  />
+        -->
 
         <StackLayout VerticalOptions="Start" HorizontalOptions="Center" Spacing="0">
 

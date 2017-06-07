@@ -8,7 +8,8 @@ namespace tiendaMKT
         {
             InitializeComponent();
 
-            MainPage = new tiendaMKTPage();
+            //MainPage = new tiendaMKTPage();
+            MainPage = new  Master();
         }
 
         protected override void OnStart()

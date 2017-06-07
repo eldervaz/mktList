@@ -18,7 +18,7 @@ namespace tiendaMKT
         public tiendaMKTPage()
         {
             InitializeComponent();
-            Padding = Device.OnPlatform(new Thickness(0, 20, 0, 0), new Thickness(0), new Thickness(0));
+            Title = "Relación de Productos Disponibles";
             loadJSON();
         }
 

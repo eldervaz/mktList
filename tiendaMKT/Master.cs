@@ -42,12 +42,18 @@ namespace tiendaMKT
 
             listView.ItemSelected += (sender, args) =>
                 {
+
+                    
+                    
+                    DisplayAlert("Próximamente", args.SelectedItem.ToString(), "ok");
                     // Set the BindingContext of the detail page.
                     this.Detail.BindingContext = args.SelectedItem;
-
+                    
                     // Show the detail page.
                     this.IsPresented = false;
-                };
+
+                    //((ListView)sender).SelectedItem = null;
+				};
            // */
 
 

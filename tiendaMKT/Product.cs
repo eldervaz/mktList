@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.ObjectModel;
+using Newtonsoft.Json.Linq;
+
 namespace tiendaMKT
 {
     class Product
@@ -12,6 +15,10 @@ namespace tiendaMKT
 		public string instructor { get; set; }
 		public int pCiento { get; set; }
 		public int pMillar { get; set; }
-        public Array colores { get; set; }
+        public JArray colores { get; set; }
+        public JArray items { get; set; }
+
+
     }
+
 }

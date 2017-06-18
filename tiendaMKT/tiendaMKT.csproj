@@ -30,6 +30,15 @@
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
     <EmbeddedResource Include="tiendaMKTPage.xaml" />
+    <EmbeddedResource Include="ListCategory.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailsProduct.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagePay.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -42,6 +51,15 @@
     <Compile Include="Product.cs" />
     <Compile Include="Master.cs" />
     <Compile Include="Favoritos.cs" />
+    <Compile Include="ListCategory.xaml.cs">
+      <DependentUpon>ListCategory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsProduct.xaml.cs">
+      <DependentUpon>DetailsProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PagePay.xaml.cs">
+      <DependentUpon>PagePay.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

@@ -12,7 +12,7 @@ namespace tiendaMKT
             InitializeComponent();
 
             btnPagar.Clicked += (sender, e) => {
-                DisplayAlert("Gracias por su compra", "CONFIRMADO" , "ok");
+                DisplayAlert("Gracias por su compra", "En breve, le estaremos enviando un correo electrónico con la factura y los detalles de la compra." , "ok");
 
                 //Navigation.PushModalAsync(  new tiendaMKTPage()  );
                 Navigation.PopToRootAsync();

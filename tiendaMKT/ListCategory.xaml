@@ -8,27 +8,27 @@
         
         <StackLayout VerticalOptions="Start" HorizontalOptions="Center" Spacing="0">
 
-            <ListView x:Name="list" SeparatorVisibility="None" RowHeight="210" BackgroundColor="Silver" Margin="0"   >
+            <ListView x:Name="list" SeparatorVisibility="None" RowHeight="155" BackgroundColor="Silver" Margin="0"   >
 
                     
                     <ListView.ItemTemplate>
                       
                         <DataTemplate>
                             <ViewCell><ViewCell.View  >
-                                <StackLayout Orientation="Vertical" Spacing="0" >
+                                <StackLayout Orientation="Vertical" Spacing="0" VerticalOptions="Start" >
                                     
                                     <Image Source= "{Binding imagen}"   HorizontalOptions="FillAndExpand"
-                                           HeightRequest="170" />
+                                           HeightRequest="130" Aspect="AspectFill"  />
 
-                                    <Grid Grid.Row="0" RowSpacing="0"  Padding="5,0,5,15" BackgroundColor="White">
+                                    <Grid Grid.Row="0" RowSpacing="0"  Padding="5,0,5,0" BackgroundColor="White">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*" />
-                                            <ColumnDefinition Width="60" />
+                                            <ColumnDefinition Width="80" />
                                         </Grid.ColumnDefinitions>
                                         
                                             <Label  Text="{Binding nombre}" Grid.Column="0"   />
 
-                                            <StackLayout Padding="00" Orientation="Horizontal" Grid.Column="1">
+                                            <StackLayout Padding="0" Orientation="Horizontal" Grid.Column="1">
                                                 <Label Text="S/: " HorizontalTextAlignment="End"/>
                                                 <Label Text="{Binding pCiento}" HorizontalTextAlignment="End" />
                                             </StackLayout>

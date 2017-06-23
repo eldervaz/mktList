@@ -32,14 +32,14 @@
 
 
                 
-                <Label Grid.Row="0" Grid.Column="0" Text="Fecha de Entrega:" FontAttributes="Bold"  />
+                <Label Grid.Row="0" Grid.Column="0" Text="Fecha Entrega:" FontAttributes="Bold"  />
 
                 <DatePicker VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="1" >
                  <DatePicker.Format>dd-MM</DatePicker.Format>
                 </DatePicker>
 
                 
-                <Label Grid.Row="1" Grid.Column="0" Text="Hora de Entrega:" FontAttributes="Bold" />
+                <Label Grid.Row="1" Grid.Column="0" Text="Hora Entrega:" FontAttributes="Bold" />
 
                 <DatePicker VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.Column="1" >
                  <DatePicker.Format>HH:MM</DatePicker.Format>
@@ -73,7 +73,7 @@
             <Entry Placeholder="CVV"></Entry>
 
 
-            <Button Text="Pagar" BackgroundColor="Green" TextColor="White" Margin="10" />
+            <Button x:Name="btnPagar" Text="Pagar" BackgroundColor="Green" TextColor="White" Margin="10" />
 
 
 

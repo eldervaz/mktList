@@ -10,20 +10,33 @@ namespace tiendaMKT
         {
             
 
+
            //*
 			// Create ListView for the master page.
 			var listView = new ListView();
             listView.Margin = Device.OnPlatform(new Thickness(0, 10, 0, 0), new Thickness(0), new Thickness(0));
             listView.RowHeight = 50;
+            listView.BackgroundColor = Color.FromHex("dfdfdf");
+
+            listView.SeparatorColor = Color.White;
+
+			var template = new DataTemplate(typeof(TextCell));
+            template.SetValue(TextCell.TextColorProperty, Color.White);
+			
+
 			listView.ItemsSource = new string[]{
 			  "Favoritos",
 			  "Los más buscados",
 			  "Los más vendidos",
-                "Promoción del mes",
+              "Promoción del mes",
 			  "Conócenos",
 			  "Se nuestro proveedor",
 			  "Búscanos en Facebook"
 			};
+            //listView.ItemTemplate = template;
+
+
+			
 
 			this.Master = new ContentPage
 			{
@@ -34,7 +47,8 @@ namespace tiendaMKT
 				{
 					Children =
 					{
-                        new Image{Source="fotoDemo.jpg"},
+                        new Image{Source="fotoDemo.jpg", 
+                                    Margin=new Thickness(0, 30, 0, 0) },
 						listView
 					}
 				}
@@ -42,9 +56,6 @@ namespace tiendaMKT
 
             listView.ItemSelected += (sender, args) =>
                 {
-
-                    
-                    
                     DisplayAlert("Próximamente", args.SelectedItem.ToString(), "ok");
                     // Set the BindingContext of the detail page.
                     this.Detail.BindingContext = args.SelectedItem;

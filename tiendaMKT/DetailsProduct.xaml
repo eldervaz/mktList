@@ -5,7 +5,7 @@
     <ScrollView>
     <StackLayout VerticalOptions="Start" HorizontalOptions="Center" Spacing="0" Margin="10,0,10,0">
         
-<Image x:Name="imagenView"  HeightRequest="170" Aspect="AspectFit" HorizontalOptions="FillAndExpand"  />
+<Image x:Name="imagenView"  HeightRequest="130" Aspect="AspectFit" HorizontalOptions="FillAndExpand"  />
 
         <Label Text="{Binding NameCurso}" FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" Margin="20"   />
         <Label Text="{Binding Description}" />
@@ -61,14 +61,14 @@
                 </BoxView>
 
             <!--por ciento-->    
-            <Label x:Name="labelC"  Text="Costo por ciento" Grid.Row="4" Grid.Column="0" VerticalOptions="End"  HorizontalTextAlignment="End" FontAttributes="Bold"   />
+            <Label x:Name="labelC"  Text="Costo x ciento" Grid.Row="4" Grid.Column="0" VerticalOptions="End"  HorizontalTextAlignment="End" FontAttributes="Bold"   />
             <Label x:Name="labelprecioC"  Text="S/ 0.00" Grid.Row="4" Grid.Column="1" VerticalOptions="End" HorizontalTextAlignment="Start" FontAttributes="Bold"   />
                
             <Button Text="-" x:Name="restaC" Grid.Row="5" Grid.Column="0" BackgroundColor="Silver" WidthRequest="150"  HorizontalOptions="End" Margin="0,0,10,0" />
             <Button Text="+" x:Name="sumaC" Grid.Row="5" Grid.Column="1" BackgroundColor="Silver" WidthRequest="150"  HorizontalOptions="Start" Margin="10,0,0,0"/>
 
             <!--por millar-->
-            <Label x:Name="labelM" Text="Costo por millar" Grid.Row="6" Grid.Column="0" VerticalOptions="End" HorizontalTextAlignment="End" FontAttributes="Bold"   />
+            <Label x:Name="labelM" Text="Costo x millar" Grid.Row="6" Grid.Column="0" VerticalOptions="End" HorizontalTextAlignment="End" FontAttributes="Bold"   />
             <Label x:Name="labelprecioM" Text="S/ 0.00" Grid.Row="6" Grid.Column="1" VerticalOptions="End" HorizontalTextAlignment="Start" FontAttributes="Bold"   />
                
             <Button Text="-" x:Name="restaM" Grid.Row="7" Grid.Column="0" BackgroundColor="Silver" WidthRequest="150"  HorizontalOptions="End" Margin="0,0,10,0"/>

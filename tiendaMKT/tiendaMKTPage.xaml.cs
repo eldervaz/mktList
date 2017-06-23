@@ -19,7 +19,7 @@ namespace tiendaMKT
         public tiendaMKTPage()
         {
             InitializeComponent();
-            Title = "Relación de Productos Disponibles";
+            Title = ".: Mstore :.";
             loadJSON();
         }
 

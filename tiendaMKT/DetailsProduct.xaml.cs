@@ -39,9 +39,9 @@ namespace tiendaMKT
             sumaC.Clicked += (sender, e) => {
                 cantC++;
                 if(cantC > 1){
-                    labelC.Text = "Costo por " + cantC + " cientos";
+                    labelC.Text = "" + cantC + " cientos";
                 }else{
-                    labelC.Text = "Costo por 1 ciento";
+                    labelC.Text = "Costo x 1 ciento";
                     cantC = 1;
                 }
 
@@ -54,11 +54,11 @@ namespace tiendaMKT
                 cantC--;
 				if (cantC > 1)
 				{
-					labelC.Text = "Costo por " + cantC + " cientos";
+					labelC.Text = "" + cantC + " cientos";
 				}
 				else
 				{   
-					labelC.Text = "Costo por 1 ciento";
+					labelC.Text = "Costo x 1 ciento";
                     cantC = 1;
 				}
 
@@ -72,11 +72,11 @@ namespace tiendaMKT
 				cantM++;
 				if (cantM > 1)
 				{
-					labelM.Text = "Costo por " + cantM + " millar";
+					labelM.Text = "" + cantM + " millar";
 				}
 				else
 				{
-					labelC.Text = "Costo por 1 millar";
+					labelC.Text = "Costo x 1 millar";
 					cantC = 1;
 				}
 
@@ -89,11 +89,11 @@ namespace tiendaMKT
 				cantM--;
 				if (cantM > 1)
 				{
-					labelM.Text = "Costo por " + cantM + " millar";
+					labelM.Text = "" + cantM + " millar";
 				}
 				else
 				{
-					labelM.Text = "Costo por 1 millar";
+					labelM.Text = "Costo x 1 millar";
 					cantM = 1;
 				}
 
